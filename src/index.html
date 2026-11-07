@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d18">
 
+<title>JARVIS English</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d18;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+header {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1d293b;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #38a9ff;
+}
+
+.status {
+    color: #42d392;
+    font-size: 12px;
+}
+
+main {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #929eb1;
+    line-height: 1.6;
+}
+
+.assistant {
+    background: #111b2c;
+    border: 1px solid #243650;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #102b48;
+    border: 2px solid #38a9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #38a9ff;
+}
+
+.assistant h2 {
+    margin-bottom: 10px;
+}
+
+.assistant p {
+    color: #929eb1;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #1689e8;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0873ca;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.card {
+    background: #111b2c;
+    border: 1px solid #243650;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #38a9ff;
+}
+
+.card p {
+    color: #929eb1;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #66758b;
+    font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1 {
+        font-size: 26px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">JARVIS <span>ENGLISH</span></div>
+    <div class="status">● SISTEMA INICIADO</div>
+</header>
+
+<main>
+
+    <section class="welcome">
+        <h1>Bem-vindo ao JARVIS English</h1>
+        <p>
+            Seu aprendizado de inglês começa aqui.
+            Aprenda no seu ritmo com inteligência artificial.
+        </p>
+    </section>
+
+    <section class="assistant">
+        <div class="circle">J</div>
+
+        <h2>Olá, sou seu professor!</h2>
+
+        <p>
+            Estou preparado para ajudar você
+            a aprender inglês desde o básico.
+        </p>
+
+        <button onclick="iniciarAula()">
+            COMEÇAR A APRENDER
+        </button>
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>📚 Vocabulário</h3>
+            <p>Aprenda novas palavras e expressões em inglês.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎧 Pronúncia</h3>
+            <p>Pratique sua pronúncia e desenvolva sua conversação.</p>
+        </div>
+
+        <div class="card">
+            <h3>✍️ Gramática</h3>
+            <p>Aprenda a construir frases corretamente.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Meu progresso</h3>
+            <p>Acompanhe sua evolução durante os estudos.</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    JARVIS English © 2026 — Inteligência a serviço do aprendizado.
+</footer>
+
+<script>
+function iniciarAula() {
+    alert("Bem-vindo! Em breve você poderá iniciar sua primeira aula de inglês com o JARVIS.");
+}
+</script>
+
+</body>
+</html>
